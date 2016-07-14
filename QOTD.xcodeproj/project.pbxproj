@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B6CCD2AC419E75D47E1CCBA3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34660AB49804205B06FAB742 /* Pods.framework */; };
+		E2010EDC1D376A8B00793AE0 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2010EDB1D376A8B00793AE0 /* QuoteCell.swift */; };
+		E2010EDE1D376C1000793AE0 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2010EDD1D376C1000793AE0 /* Base.swift */; };
 		E23BD0FE1D31E66600121A59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BD0FD1D31E66600121A59 /* AppDelegate.swift */; };
-		E23BD1001D31E66600121A59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BD0FF1D31E66600121A59 /* ViewController.swift */; };
+		E23BD1001D31E66600121A59 /* QuotesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BD0FF1D31E66600121A59 /* QuotesTable.swift */; };
 		E23BD1031D31E66600121A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23BD1011D31E66600121A59 /* Main.storyboard */; };
 		E23BD1061D31E66600121A59 /* QOTD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E23BD1041D31E66600121A59 /* QOTD.xcdatamodeld */; };
 		E23BD1081D31E66600121A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23BD1071D31E66600121A59 /* Assets.xcassets */; };
@@ -38,9 +40,11 @@
 /* Begin PBXFileReference section */
 		24125E6E42F393F9A3775052 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		34660AB49804205B06FAB742 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2010EDB1D376A8B00793AE0 /* QuoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		E2010EDD1D376C1000793AE0 /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		E23BD0FA1D31E66600121A59 /* QOTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QOTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23BD0FD1D31E66600121A59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E23BD0FF1D31E66600121A59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E23BD0FF1D31E66600121A59 /* QuotesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTable.swift; sourceTree = "<group>"; };
 		E23BD1021D31E66600121A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E23BD1051D31E66600121A59 /* QOTD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QOTD.xcdatamodel; sourceTree = "<group>"; };
 		E23BD1071D31E66600121A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,7 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				E23BD0FD1D31E66600121A59 /* AppDelegate.swift */,
-				E23BD0FF1D31E66600121A59 /* ViewController.swift */,
+				E23BD0FF1D31E66600121A59 /* QuotesTable.swift */,
+				E2010EDD1D376C1000793AE0 /* Base.swift */,
+				E2010EDB1D376A8B00793AE0 /* QuoteCell.swift */,
 				E23BD1011D31E66600121A59 /* Main.storyboard */,
 				E23BD1071D31E66600121A59 /* Assets.xcassets */,
 				E23BD1091D31E66600121A59 /* LaunchScreen.storyboard */,
@@ -337,7 +343,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23BD1001D31E66600121A59 /* ViewController.swift in Sources */,
+				E2010EDC1D376A8B00793AE0 /* QuoteCell.swift in Sources */,
+				E23BD1001D31E66600121A59 /* QuotesTable.swift in Sources */,
+				E2010EDE1D376C1000793AE0 /* Base.swift in Sources */,
 				E23BD1061D31E66600121A59 /* QOTD.xcdatamodeld in Sources */,
 				E23BD0FE1D31E66600121A59 /* AppDelegate.swift in Sources */,
 			);
@@ -481,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QOTD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ahmed-Musse.QOTD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -493,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QOTD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Ahmed-Musse.QOTD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
